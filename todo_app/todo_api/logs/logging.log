@@ -1,0 +1,52 @@
+Watching for file changes with StatReloader
+Not Found: /
+Unauthorized: /api/
+Not Found: /
+Unauthorized: /api/v1/folder/
+Method Not Allowed: /register/
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\rest_framework\renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\rest_framework\renderers.py", line 654, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\rest_framework\renderers.py", line 562, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\venv\lib\site-packages\rest_framework\serializers.py", line 1027, in get_fields
+    assert hasattr(self, 'Meta'), (
+AssertionError: Class UserLoginSerializer missing "Meta" attribute
+C:\Users\Пользователь\PycharmProjects\pythonProjectToDOSite\todo_app\todo_api\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /login/
+Unauthorized: /api/
+Unauthorized: /api/v1/folder/
+Unauthorized: /api/v1/folder/
+Unauthorized: /api/v1/folder/1/
+Unauthorized: /api/v1/folder/
+Unauthorized: /api/v1/pages/
+Unauthorized: /api/v1/pages/1/
+Unauthorized: /api/v1/pages/
+Unauthorized: /api/v1/records/
+Unauthorized: /api/v1/records/1/
+Unauthorized: /api/v1/records/
+Method Not Allowed: /api/v1/token/
+Method Not Allowed: /api/v1/token/refresh/
+Method Not Allowed: /api/v1/token/verify/
